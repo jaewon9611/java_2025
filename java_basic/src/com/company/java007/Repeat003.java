@@ -1,4 +1,4 @@
-package mini_project;
+package com.company.java007;
 
 public class Repeat003 {
 	public static void main(String[] args) {

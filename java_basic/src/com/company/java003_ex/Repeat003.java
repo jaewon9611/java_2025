@@ -17,8 +17,5 @@ public class Repeat003 {
 		avg = total/3.0;
 		System.out.println("총점 :" + total);
 		System.out.println("평균 :" + avg);
-		
-		
-		
 	}
 }
