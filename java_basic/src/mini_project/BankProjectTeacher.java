@@ -44,12 +44,14 @@ public class BankProjectTeacher {
 				System.out.print("PASS:"); temp_pass=sc.next().charAt(0);
 				if(temp_id==id && temp_pass==pass) {
 					System.out.print("입금 금액: "); add=sc.nextInt();
-					System.out.println("==입금완료" + "\n" + (balance+add));}
+					balance = balance + add;
+					System.out.println("==입금완료" + "\n" + balance);}
 				else{
 					System.out.println("정보를 확인해주세요.");
 				}
 				break; // end case3
 				
+<<<<<<< HEAD
 				case 4: System.out.println("출금기능입니다.");
 				int sub = 0; 
 				System.out.print("ID:"); temp_id=sc.next().charAt(0);
@@ -63,9 +65,44 @@ public class BankProjectTeacher {
 				break; // end case4		
 				case 5: System.out.println("삭제기능입니다.");
 				
+=======
+				
+				case 4: System.out.println("출금기능입니다.");
+				    int sub = 0;
+				    System.out.print("ID:"); temp_id = sc.next().charAt(0);
+				    System.out.print("PASS:"); temp_pass = sc.next().charAt(0);
+				    if(temp_id == id && temp_pass == pass) {
+				        System.out.print("출금 금액: "); 
+				        sub = sc.nextInt();	        
+				        balance -= sub;
+				        System.out.println("== 출금 완료 ==" + "\n현재 잔액: " + balance);
+				        
+				    } else {
+				        System.out.println("정보를 확인해주세요.");
+				    }
+				    break; // end case4
+				
+				case 5: System.out.println("삭제기능입니다.");
+				System.out.print("ID:"); temp_id = sc.next().charAt(0);
+			    System.out.print("PASS:"); temp_pass = sc.next().charAt(0);
+			    if(temp_id ==id && temp_pass ==pass) {
+			    	System.out.println("계좌를 삭제하시겠습니까? (Y/N)");
+			    	char delete = sc.next().charAt(0);
+			    	if(delete == 'y') {
+			    		id = ' ';
+			    		pass = ' ';
+			    		balance = 0;
+			    	}
+			    	else if(delete == 'n') {
+			    		System.out.println("취소되었습니다.");
+			    	}	else {
+				        System.out.println("정보를 확인해주세요.");
+				        }    	
+			    }
+>>>>>>> 91f55afc75093998a6e92e9b307142787e51a036
 				break; // end case5
 				
-				}
+			}
 		}
 	}
 }
