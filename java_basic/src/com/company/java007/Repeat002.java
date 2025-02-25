@@ -1,4 +1,4 @@
-package mini_project;
+package com.company.java007;
 
 import java.util.Scanner;
 
