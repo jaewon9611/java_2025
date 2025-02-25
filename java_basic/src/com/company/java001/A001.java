@@ -1,12 +1,10 @@
 package com.company.java001;
-
 public class A001 {
 	public static void main(String [] args) {
 		System.out.println("Hello");
 		
 	} // end main
 } // end class
-
 // 한줄 주석(설명글)
 /*
 3번째줄 : public  class A001 {
