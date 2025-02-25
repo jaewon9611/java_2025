@@ -14,7 +14,7 @@ public class ArrayEx006 {
 		//		arr[3] =data; data+=0.1; 
 		//		arr[4] =data; data+=0.1;
 		double data=1.1;
-		for(int i =0; i<arr.length; i++) {arr[i] = data; data+=0.1;}
+		for(int i=0; i<arr.length; i++) {arr[i] = data; data+=0.1;}
 		for(int i=0; i<arr.length; i++) {System.out.print(String.format("%.1f", arr[i]) + "\t");}
 	}
 }
