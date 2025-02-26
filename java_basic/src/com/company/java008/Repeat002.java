@@ -1,4 +1,4 @@
-package com.company.java007_ex;
+package com.company.java008;
 
 public class Repeat002 {
 	public static void main(String[] args) {
