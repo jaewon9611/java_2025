@@ -12,10 +12,10 @@ public class BankProject {
 			for(;;) { System.out.println("\n\n=====BANK=====\r\n" + "1.추가\r\n" + "2.조회\r\n" + "3.입금\r\n"
 			+"4.출금\r\n" + "5.삭제\r\n"+ "9.종료\r\n" + "입력>>>");
 			num= sc.nextInt();
-			if(num==9) {System.out.println("종료기능입니다."); break;}
+			if(num==9) {System.out.println("종료기능"); break;}
 			// Step2.기능
 			switch(num) {
-				case 1: System.out.println("추가기능입니다.");
+				case 1: System.out.println("추가기능");
 					// 변수 입력 처리 출력
 					System.out.print("ID:"); id=sc.next().charAt(0);
 					System.out.print("PASS:"); pass=sc.next().charAt(0);
@@ -25,7 +25,7 @@ public class BankProject {
 					//  *BALANCE : _입력받기 10000
 				break; // end case1
 				
-				case 2: System.out.println("조회기능입니다.");
+				case 2: System.out.println("조회기능");
 					//...Step4
 					//변수 - 임시변수 temp_id, 임시변수 temp_pass
 					char temp_id=' ' ,temp_pass= ' ';
@@ -38,7 +38,7 @@ public class BankProject {
 					else {System.out.println("정보를 확인해주세요");}
 				break; // end case2
 				
-				case 3: System.out.println("입금기능입니다.");
+				case 3: System.out.println("입금기능");
 				int add=0;
 				System.out.print("ID:"); temp_id=sc.next().charAt(0);
 				System.out.print("PASS:"); temp_pass=sc.next().charAt(0);
@@ -52,7 +52,7 @@ public class BankProject {
 				break; // end case3
 				
 				
-				case 4: System.out.println("출금기능입니다.");
+				case 4: System.out.println("출금기능");
 				    int sub = 0;
 				    System.out.print("ID:"); temp_id = sc.next().charAt(0);
 				    System.out.print("PASS:"); temp_pass = sc.next().charAt(0);
@@ -67,7 +67,7 @@ public class BankProject {
 				    }
 				    break; // end case4
 				
-				case 5: System.out.println("삭제기능입니다.");
+				case 5: System.out.println("삭제기능");
 				System.out.print("ID:"); temp_id = sc.next().charAt(0);
 			    System.out.print("PASS:"); temp_pass = sc.next().charAt(0);
 			    

@@ -37,7 +37,7 @@ public class MethodEx003 {
 	System.out.println("5. 10+20= " + myadd(10,20));  // 두숫자를 더한값을 결과값으로 줌 
 	
 	// public static char myban(char 'A' , 'B') if(myban=='A'){syso"노랑조"} else{syso 노랑조}
-	System.out.println("6. 반(노랑조/주황조)=" + myban('B')); // A이면 노랑조 , B이면 주황조
+	System.out.println("6. 반(노랑조/주황조)=" + myban('A')); // A이면 노랑조 , B이면 주황조
 	
 	// public static int stdId(int a) {return 'G'+a}
 	System.out.println("7. 당신의 학번은?" + stdId(1111)); // G하고 넣어준 학번 나오게
