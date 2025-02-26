@@ -70,6 +70,7 @@ public class BankProject {
 				case 5: System.out.println("삭제기능입니다.");
 				System.out.print("ID:"); temp_id = sc.next().charAt(0);
 			    System.out.print("PASS:"); temp_pass = sc.next().charAt(0);
+			    
 			    if(temp_id ==id && temp_pass ==pass) {
 			    	System.out.println("계좌를 삭제하시겠습니까? (Y/N)");
 			    	char delete = sc.next().charAt(0);
@@ -77,13 +78,12 @@ public class BankProject {
 			    		id = ' ';
 			    		pass = ' ';
 			    		balance = 0;
+			    		System.out.println("계좌가 정상 삭제되었습니다");
 			    	}
-			    	else if(delete == 'n') {
-			    		System.out.println("취소되었습니다.");
-			    	}	else {
-				        System.out.println("정보를 확인해주세요.");
-				        }    	
+			    	else{System.out.println("취소되었습니다.");}   	
 			    }
+			    else { 
+		            System.out.println("정보를 확인해주세요.");} 
 				break; // end case5
 			}
 		}
