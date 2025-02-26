@@ -1,4 +1,4 @@
-package com.company.java007_ex;
+package com.company.java008;
 
 public class Repeat004 {
 	public static void main(String[] args) {
@@ -10,11 +10,12 @@ public class Repeat004 {
 //		arr[0][2] = data+=30;
 		
 		for(int ch=0; ch<arr.length; ch++) {
-		for(int kan=0; kan<arr[ch].length; kan++){
-			arr[ch][kan] = data; data+=10;
-		System.out.print(arr[ch][kan] +"\t");
-		}
-		System.out.println();
+			for(int kan=0; kan<arr[ch].length; kan++){
+				arr[ch][kan] = data; data+=10;
+				System.out.print(arr[ch][kan] +"\t");
+			}
+			data=50;
+			System.out.println();
 		}
 	}
 }
