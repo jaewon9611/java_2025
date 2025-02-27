@@ -35,8 +35,6 @@ public class MethodEx004{
 	      String pass = "";
 	      String jang = "";
 	      String star= ""; 
-	      String level_kor="" , level_eng="" , level_math="";
-	      String re = "";
 	      Scanner sc = new Scanner(System.in);
 	      
 	      /////////////////////(2) 입력 : 이름, 국어, 영어, 수학점수를 입력받으시오.
