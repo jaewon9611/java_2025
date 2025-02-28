@@ -23,7 +23,7 @@ class MyPrice001{
 public class ClassEx002 {
 	public static void main(String[] args) {
 		MyPrice001   p1 = new MyPrice001();
-		//3-1) new 공강빌리기, 객체생성	3-2) MyPrice001() 초기화 3-3) p1 주소
+		//3-1) new 공간빌리기, 객체생성	3-2) MyPrice001() 초기화 3-3) p1 주소
         p1.input();
         p1.show();
 	}
