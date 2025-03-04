@@ -2,7 +2,12 @@ package part001;
 
 public class SelfTest008 {
 	public static void main(String[] args) {
-		for(int a=0; a<=10; a++) {System.out.print(a);}
+		for(int a=1; a<=10; a++) {
+			if(a==10) {
+			System.out.print(a);}
+			else {System.out.print(a + ",");}
+			
+		}
 	}
 }
 /*

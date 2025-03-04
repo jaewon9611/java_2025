@@ -2,7 +2,7 @@ package part001;
 
 import java.util.Scanner;
 
-public class SelfTest011 {
+public class SelfTest012 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int a;
