@@ -18,3 +18,5 @@
 [BankProject 링크:https://youtu.be/R2N1zat7imY]
 ####
 2025-02-27 method 오버로딩, OOP class // vs querySelector
+####
+2025-02-28 OOP 생성자 static
