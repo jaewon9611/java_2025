@@ -1,5 +1,4 @@
 package com.company.java001;
-
 public class A004 {
 	public static void main(String [] args) {
 		System.out.println("1.파일명저장 : A004.java");
