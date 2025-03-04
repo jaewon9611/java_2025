@@ -20,3 +20,5 @@
 2025-02-27 method 오버로딩, OOP class // vs querySelector
 ####
 2025-02-28 OOP 생성자 static
+####
+2025-03-04 OOP final MIDIFIER, class배열
