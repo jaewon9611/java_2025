@@ -22,3 +22,5 @@
 2025-02-28 OOP 생성자 static
 ####
 2025-03-04 OOP final MIDIFIER, class배열
+####
+2025-03-05 extends상속 poly다형성 / vs font속성 문단속성
