@@ -7,7 +7,10 @@ package com.company.java012;
         Plus   Minus  Multiply   Divide
        (exec)  (exec) (exec)     (exec)
 */
-class Calc     extends Object {void exec(double d1, double d2) {System.out.println(); }}
+class Calc     extends Object {
+	void exec(double d1, double d2) {System.out.println(); }
+}
+
 class Plus     extends Calc   {void exec(double d1, double d2) {System.out.println(d1+d2);}}
 class Minus    extends Calc   {void exec(double d1, double d2) {System.out.println(d1-d2);}}
 class Multiply extends Calc   {void exec(double d1, double d2) {System.out.println(d1*d2);}}
