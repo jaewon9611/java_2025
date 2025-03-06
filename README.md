@@ -25,4 +25,4 @@
 ####
 2025-03-05 extends상속 poly다형성 / vs font속성 문단속성
 $$$$
-2025-03-06 abstract 추상화, interface
+2025-03-06 abstract 추상화, interface vs getElementById 및 onclick 이용 속성 문단 style 적용
