@@ -1,4 +1,4 @@
-package Repeat0306;
+package repeat0306;
 
 class A{private String name;
 	public A() {super();}
