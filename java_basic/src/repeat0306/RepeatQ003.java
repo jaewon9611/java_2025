@@ -1,4 +1,4 @@
-package Repeat0306;
+package repeat0306;
 
 class Car4 extends Object{
 	private String color; //private 수정금지

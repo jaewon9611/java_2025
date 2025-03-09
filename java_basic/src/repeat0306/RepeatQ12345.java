@@ -1,4 +1,4 @@
-package Repeat0306;
+package repeat0306;
 
 class A11{
 	int a; //(1)
