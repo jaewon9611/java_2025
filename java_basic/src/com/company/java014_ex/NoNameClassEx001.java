@@ -1,4 +1,4 @@
-package com.company.java014ex;
+package com.company.java014_ex;
 
 interface Calc{public double exec(double num1, double num2);}
 

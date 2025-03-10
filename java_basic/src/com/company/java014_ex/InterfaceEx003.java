@@ -1,4 +1,4 @@
-package com.company.java014ex;
+package com.company.java014_ex;
 /*
 1. 상속도
         Vehicle (run))
