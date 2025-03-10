@@ -1,9 +1,9 @@
 package repeat0310;
 
 class A{
-	int a;
-	static String company;
-	void method() {int a;}
+	int a;					// 인스턴스 변수
+	static String company;  // 클래스 변수
+	void method() {int a;}  // 지역 변수
 }
 
 public class Repeat002 {
