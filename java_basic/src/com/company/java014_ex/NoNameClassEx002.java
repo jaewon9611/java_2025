@@ -1,4 +1,4 @@
-package com.company.java014ex;
+package com.company.java014_ex;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,14 +9,13 @@ import javax.swing.JOptionPane;
 
 //1. 클래스는 부품객체 (멤버변수 / 멤버함수)
 //2. 조립 
-
-class MyView implements ActionListener{ // ctrl + shift + o
+class MyView2{ // ctrl + shift + o
 	//멤버변수 (frame:틀/button:버튼) 부품 - 
 	JFrame frame;                JButton button;
 	
-	public MyView() {
-		frame = new JFrame("BOX");
-		button = new JButton("BUTTON");
+	public MyView2() {
+		frame = new JFrame();
+		button = new JButton("click");
 	}
 	//멤버함수
 	public void create() {
@@ -26,16 +25,15 @@ class MyView implements ActionListener{ // ctrl + shift + o
 		frame.setSize(300, 300);
 		//2-3. frame.setVisible
 		frame.setVisible(true);
-		button.addActionListener(this); // 이벤트대상.이벤트(핸들러);
-	}
-	@Override
-	public void actionPerformed(ActionEvent e) { // 이벤트 발생시 처리
-		JOptionPane.showMessageDialog(null, "click!");
+		button.addActionListener(new ActionListener() { //1) interface 는 new 못하지만
+			@Override public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null,"click");
+			} //2) 한번쓰고 버릴목적
+		}); //3) new 인터페이스명(){ implements 구현메서드}
 	}
 }
-
-public class NoNameClassEx003 {
+public class NoNameClassEx002 {
 	public static void main(String[] args) {
-		new MyView().create();
+		new MyView2().create();
 	}
 }
