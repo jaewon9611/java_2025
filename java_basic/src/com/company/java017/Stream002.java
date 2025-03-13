@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class Stream002 {
 	public static void main(String[] args) {
 		// 데이터종류 상관없이 같은방식으로 처리
-		Integer[]     arr = {1,2,3,0,4,5,1,2,3};
+		Integer[]     arr = {1,6,3,7,4,5,6,2,9};
 		List<Integer> list= Arrays.asList(arr);
 		
 		
@@ -21,7 +21,7 @@ public class Stream002 {
 		// Consumer  : void java.util.function.Consumer.accept ( T t )
 		
 		//stream_arr.filter((t) ->{return t%2!=0;}); //홀수 : 필터링
-		stream_arr.filter(t -> t%2!=0)   // 홀수 : 필터링
+		stream_arr.filter(t -> t%2==0)   // 홀수 : 필터링
 				  .distinct()            // 중복제거       153
 				  .sorted()              // 정렬			135
 				  .skip(1)               // skip		35
@@ -29,7 +29,7 @@ public class Stream002 {
 		
 		System.out.println(); System.out.println();
 		
-		stream_list.filter(t -> t%2!=0)   // 홀수 : 필터링
+		stream_list.filter(t -> t%2==0)   // 홀수 : 필터링
 		  .distinct()            // 중복제거       153
 		  .sorted()              // 정렬			135
 		  .skip(1)               // skip		35
