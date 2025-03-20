@@ -36,3 +36,5 @@
 2025-03-12 Stream JAVA IO
 ####
 2025-03-13 JavaIO char img buffered StringBuffer ,NetWork
+####
+2025-03-20 JDBC MYSQL 세팅 JDBC 연동
