@@ -72,14 +72,16 @@ show tables;
 select * from emp;
 
 create table milk(
-	mno int not null auto_increment primary key,
+	mno int not null primary key auto_increment,
     mname varchar(50) not null,
-    mprice int not null,
-    mnum int not null,
-    mtotal int not null
+    mprice int not null
 );
-desc milk;
-show tables;
+insert into milk values (1 , 'white' , 1500);
+insert into milk values (2 , 'choco' , 1500);
+insert into milk values (3 , 'banana', 2500);
+insert into milk values (4 , 'coffee', 1500);
+insert into milk values (5 , 'white' , 1500);
+select * from milk;
 
 create table score(
 	sno int not null auto_increment primary key,

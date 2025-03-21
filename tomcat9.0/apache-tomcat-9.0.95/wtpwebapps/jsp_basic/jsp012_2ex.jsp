@@ -35,9 +35,9 @@
 			}
 		}catch(Exception e){ e.printStackTrace();
 		}finally{
-			if(rset != null) { rset.close();}
+			if(rset  != null) { rset. close();}
 			if(pstmt != null) { pstmt.close();}
-			if(conn != null) { conn.close();}
+			if(conn  != null) { conn. close();}
 		}
 		%>
 	</div>
