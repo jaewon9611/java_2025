@@ -123,7 +123,6 @@ create table salagrade (
 );
 desc salagrade;
 
-
 ## ■003. crud
 create table userinfo(
 	no int not null auto_increment primary key,
