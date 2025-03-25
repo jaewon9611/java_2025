@@ -12,8 +12,18 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-	<div class="container card  my-5">
-		<h3 class="card-header"> Statement </h3>
+	<div class="container card bg-success  my-5">
+	<div class="my-5"><%=session.getAttribute("username")%></div>
+	
+		<h3 class="card-header bg-success text-white"> MY INFO </h3>
+		<table class="table table-striped table-bordered">
+		<caption>MYINFO</caption>
+		<tbody>
+			<tr><th scope="row">NO</th><td> </td></tr>
+			<tr><th scope="row">NAME</th><td></td></tr>
+			<tr><th scope="row">PASS</th><td></td></tr>
+		</tbody>
+		</table>
 	</div>
 </body>
 </html>		
