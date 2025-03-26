@@ -7,9 +7,9 @@ request.setCharacterEncoding("UTF-8");
  String name = request.getParameter("name");
  String pass = request.getParameter("pass");
  
-Connection conn = null; PreparedStatement pstmt = null; ResultSet rset = null;
-String sql = "select count(*) from member where name=? and pass=?";
-int result = 1;
+	Connection conn = null;  PreparedStatement pstmt = null; ResultSet rset = null;
+	String sql = "select count(*) 'cnt'   from member  where name=?  and pass=?";
+	int result = -1;
 try{
 	Class.forName("com.mysql.cj.jdbc.Driver");
 	conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mbasic","root","1234");
@@ -21,7 +21,8 @@ try{
 	if(rset.next() ){ result = rset.getInt("cnt");} // 줄 , 칸
 	
 	if(result == 1) { // 아이디와 비밀번호가 같은사람 1명
-		request.getRequestDispatcher("jsp022_my.jsp").forward(request,response);
+		out.println("<script>location.href='jsp022_my.jsp';</script>");
+		//request.getRequestDispatcher("jsp022_my.jsp").forward(request,response);
 		session.setAttribute("username", name); //세션정보유지하기 #
 	}else{
 		out.println("<script>alert('정보를 확인해주세요'); history.go(-1); </script>");

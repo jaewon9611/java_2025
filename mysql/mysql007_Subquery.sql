@@ -166,3 +166,14 @@ select num from atest
 where num > all(select num from atest where num in(3,4,5)) 
 order by num; -- 최대값보다 크다 6 
 
+create table member(
+	no int not null auto_increment primary key,
+    name varchar(100) not null,
+    pass varchar(50) not null
+);
+desc member;
+insert into member values(1, 'first' , 11);
+insert into member values(2, 'second' , 22);
+insert into member values(3, 'third' , 33);
+insert into member values(4, 'fourth' , 44);
+select * from member;
