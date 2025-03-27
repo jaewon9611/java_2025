@@ -16,13 +16,13 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class Jsp025_Join
  */
 @WebServlet("/user_join")
-public class Jsp025_Join extends HttpServlet {
+public class jsp025_join extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Jsp025_Join() {
+    public jsp025_join() {
         super();
         // TODO Auto-generated constructor stub
     }

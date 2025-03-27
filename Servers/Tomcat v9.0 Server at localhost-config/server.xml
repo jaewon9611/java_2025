@@ -161,9 +161,8 @@
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
-	  
-      
-	<Context docBase="Project1_mvc1_milk" path="/Project1_mvc1_milk" reloadable="true" source="org.eclipse.jst.jee.server:Project1_mvc1_milk"/><Context docBase="jsp_basic" path="/jsp_basic" reloadable="true" source="org.eclipse.jst.jee.server:jsp_basic"/></Host>
+
+      <Context docBase="JOAbooks" path="/JOAbooks" reloadable="true" source="org.eclipse.jst.jee.server:JOAbooks"/><Context docBase="Project1_mvc1_milk" path="/Project1_mvc1_milk" reloadable="true" source="org.eclipse.jst.jee.server:Project1_mvc1_milk"/><Context docBase="jsp_basic" path="/jsp_basic" reloadable="true" source="org.eclipse.jst.jee.server:jsp_basic"/></Host>
     </Engine>
   </Service>
 </Server>
