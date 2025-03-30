@@ -1,4 +1,4 @@
-package dbmanager;
+package com.company.dbmanager;
 
 import java.sql.Connection;
 
