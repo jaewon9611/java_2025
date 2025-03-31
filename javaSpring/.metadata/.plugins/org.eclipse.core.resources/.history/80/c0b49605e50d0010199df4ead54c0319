@@ -1,0 +1,10 @@
+package com.company.iotest;
+
+public class MyArea {
+	private String name;
+	private Calc   calc;
+	
+	
+	
+	
+}
