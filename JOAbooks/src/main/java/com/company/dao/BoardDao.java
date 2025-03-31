@@ -1,15 +1,16 @@
 package com.company.dao;
 
 import java.net.InetAddress;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import com.company.dbmanager.DBManager;
 import com.company.domain.BoardVO;
 
-import dbmanager.DBManager;
 
 public class BoardDao {
 //  1. 글쓰기  -  insert   into  board (  btitle  , bcontent, bname , bip   )  values (  ?,?,?,?  )

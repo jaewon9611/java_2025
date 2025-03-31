@@ -18,13 +18,13 @@ import javax.servlet.http.HttpSession;
  * Servlet implementation class Jsp025_login
  */
 @WebServlet("/user_login")
-public class Jsp025_login extends HttpServlet {
+public class jsp025_login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Jsp025_login() {
+    public jsp025_login() {
         super();
         // TODO Auto-generated constructor stub
     }
