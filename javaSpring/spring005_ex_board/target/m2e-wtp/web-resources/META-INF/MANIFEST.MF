@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+<<<<<<< HEAD:javaSpring/spring005_ex_board/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+Build-Jdk-Spec: 17
+=======
+Built-By: USER
+Build-Jdk: 11.0.26
+>>>>>>> f69a942c80703907727d2d0b94071f253da03e93:javaSpring/projectName/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+Created-By: Maven Integration for Eclipse
+
