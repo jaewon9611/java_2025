@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.company.ioctest1.AnimalFarm;
 
 @RunWith(SpringJUnit4ClassRunner.class) // spring 구동
-@ContextConfiguration(locations="classpath:config/test2.xml")//설정
+@ContextConfiguration(locations="classpath:config/test1.xml")//설정
 public class DiTest {
 		
 		@Autowired ApplicationContext context; //1. bean(스프링이 관리하는 객체들)

@@ -17,3 +17,17 @@ update board set bhit=bhit+1 where bno=?;                           #조회수�
 select * from board where bno=?;                                    #해당글수정폼
 update board set btitle=? , bcontent=? where bno=?;                 #해당글 수정기능 
 delete from board where bno=?;                                       # 해당글삭제
+
+
+create table userinfo (
+no int not null primary key auto_increment,
+name varchar(100) not null,
+age int not null
+);
+desc userinfo;
+insert into userinfo (name,age) values(?,?);
+select * from userinfo where no=?;
+update userinfo set name=?, age=?  where no=?;
+delete from userinfo where no=?;
+
+
