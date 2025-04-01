@@ -1,0 +1,4 @@
+#test3.properties
+name=sally
+ani=cat
+import javax.annotation.Resource;

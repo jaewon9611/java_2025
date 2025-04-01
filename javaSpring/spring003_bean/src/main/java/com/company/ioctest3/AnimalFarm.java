@@ -2,7 +2,6 @@ package com.company.ioctest3;
 
 import java.util.List;
 
-import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -11,11 +10,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class AnimalFarm {
-	@Value("${name}") private String name;
-	
-	//@Autowired @Qualifier("cat") private Animal ani;
-	@Resource(name="${ani}") private Animal ani;
-	private List<String>  skills;
+
+    @Value("${name}")
+    private String name;
+
+    @Autowired
+    @Qualifier("cat") // ¶Ç´Â "dog"
+    private Animal ani;
+
+    private List<String> skills;
 	
 	public List<String> getSkills() { return skills; }
 	public void setSkills(List<String> skills) { this.skills = skills; }
