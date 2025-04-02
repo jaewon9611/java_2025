@@ -1,7 +1,9 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
 >>>>>>>=f523ad4f3e91b9d67912a7eaff1d7de4165b2a6a
+IMPORT_FILES_AND_FOLDERS_RELATIVE=true
+IMPORT_FILES_AND_FOLDERS_TYPE=23,1
 eclipse.preferences.version=1
-platformState=1743422042320
+platformState=1743385293784
 quickStart=false
 tipsAndTricks=true

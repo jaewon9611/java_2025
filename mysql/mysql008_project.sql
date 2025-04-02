@@ -1,4 +1,5 @@
 use mbasic;
+show tables;
 create table board (
 bno int not null auto_increment primary key,
 btitle varchar(1000) not null,
@@ -31,3 +32,13 @@ update userinfo set name=?, age=?  where no=?;
 delete from userinfo where no=?;
 
 
+create table sboard (
+    bno int auto_increment primary key,      
+    bname varchar(50) not null,              
+    btitle varchar(100) not null,            
+    bcontent text not null,                  
+    bpass varchar(20) not null,              
+    bip varchar(45),                         
+    bhit int default 0,                     
+    bdate timestamp not null default current_timestamp
+);
