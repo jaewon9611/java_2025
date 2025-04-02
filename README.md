@@ -50,3 +50,5 @@
 2025-03-31 Spring
 ####
 2025-04-01 Spring 2일차
+####
+2025-04-02 Spring MapperScannerConfigurer Mvc
