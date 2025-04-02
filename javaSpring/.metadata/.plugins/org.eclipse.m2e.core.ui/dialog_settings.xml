@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="spring010_2"/>
+			<item value="spring010_mvc"/>
+			<item value="spring006_mybatis2"/>
 			<item value="spring005_ex_board"/>
 			<item value="spring004_jdbc"/>
 			<item value="spring003_bean"/>
@@ -12,6 +15,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="spring010_2"/>
+			<item value="spring010_mvc"/>
+			<item value="spring006_mybatis2"/>
 			<item value="spring005_ex_board"/>
 			<item value="spring004_jdbc"/>
 			<item value="spring003_bean"/>
