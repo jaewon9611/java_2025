@@ -5,7 +5,9 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
- 	<dependencies>
+	<!-- 수정 -->
+	<!-- 수정 -->
+	<dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -27,6 +29,9 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<!-- 수정 -->
+	<!-- 수정 -->  
   
   <build>
     <plugins>

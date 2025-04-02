@@ -1,19 +1,17 @@
 package com.company.dto;
 
 public class BoardDto {
-	private int bno;
+	private int    bno;
 	private String bname;
 	private String bpass;
 	private String btitle;
 	private String bcontent;
 	private String bdate;
-	private int bgit;
+	private int    bhit;
 	private String bip;
-	public BoardDto() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public BoardDto(int bno, String bname, String bpass, String btitle, String bcontent, String bdate, int bgit,
+	
+	public BoardDto() { super(); }
+	public BoardDto(int bno, String bname, String bpass, String btitle, String bcontent, String bdate, int bhit,
 			String bip) {
 		super();
 		this.bno = bno;
@@ -22,13 +20,13 @@ public class BoardDto {
 		this.btitle = btitle;
 		this.bcontent = bcontent;
 		this.bdate = bdate;
-		this.bgit = bgit;
+		this.bhit = bhit;
 		this.bip = bip;
 	}
 	@Override
 	public String toString() {
 		return "BoardDto [bno=" + bno + ", bname=" + bname + ", bpass=" + bpass + ", btitle=" + btitle + ", bcontent="
-				+ bcontent + ", bdate=" + bdate + ", bgit=" + bgit + ", bip=" + bip + "]";
+				+ bcontent + ", bdate=" + bdate + ", bhit=" + bhit + ", bip=" + bip + "]";
 	}
 	public int getBno() {
 		return bno;
@@ -66,20 +64,18 @@ public class BoardDto {
 	public void setBdate(String bdate) {
 		this.bdate = bdate;
 	}
-	public int getBgit() {
-		return bgit;
+	public int getBhit() {
+		return bhit;
 	}
-	public void setBgit(int bgit) {
-		this.bgit = bgit;
+	public void setBhit(int bhit) {
+		this.bhit = bhit;
 	}
 	public String getBip() {
 		return bip;
 	}
 	public void setBip(String bip) {
 		this.bip = bip;
-	}
-
-	
-	
+	} 
 	
 }
+ 

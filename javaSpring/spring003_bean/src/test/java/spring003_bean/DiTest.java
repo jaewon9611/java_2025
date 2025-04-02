@@ -1,8 +1,5 @@
 package spring003_bean;
 
-import static org.junit.Assert.assertSame;
-
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,25 +9,17 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.company.ioctest1.AnimalFarm;
 
-@RunWith(SpringJUnit4ClassRunner.class) // spring 구동
-@ContextConfiguration(locations="classpath:config/test1.xml")//설정
+@RunWith(SpringJUnit4ClassRunner.class)  //spring 구동
+//@ContextConfiguration(locations="classpath:config/test1.xml")  // 설정
+@ContextConfiguration(locations="classpath:config/test1.xml") 
 public class DiTest {
-		
-		@Autowired ApplicationContext context; //1. bean(스프링이 관리하는 객체들)
-		// 2. ApplicationContext = bean 생성부터 소멸까지 관리
-		// 3. @Autowired    생성자, 프로퍼티 있는지 테스트하고 자동연결, 적용
-		
-		@Test 
-		public void test1() {
-			AnimalFarm farm = context.getBean("animalFarm" , AnimalFarm.class);
-			farm.print();
-			
 
-		}
-		@Ignore
-		public void test2() {
-			AnimalFarm animalFarm1 = context.getBean("animalFarm", AnimalFarm.class);
-			AnimalFarm animalFarm2 = context.getBean("animalFarm", AnimalFarm.class);
-			assertSame(animalFarm1,animalFarm2);
-		}
+	@Autowired  ApplicationContext  context; //1. bean(스프링이 관리하는 객체들)
+	// 2. ApplicationContext - bean 생성부터 소멸까지 관리
+	// 3. @Autowired   생성자, 프로퍼티 있는지 테스트하고 자동연결, 적용
+	
+	@Test  public void test() {
+		AnimalFarm farm = context.getBean("animalFarm" , AnimalFarm.class);
+		farm.print();
+	}
 }

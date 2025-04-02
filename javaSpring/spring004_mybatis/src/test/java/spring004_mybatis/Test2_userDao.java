@@ -13,36 +13,37 @@ import com.company.dto.UserDto;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations="classpath:config/root-context.xml")
 public class Test2_userDao {
+	@Autowired  UserDao dao;
+
+	@Ignore/* @Test */  public void selectAll() { System.out.println(dao.selectAll()); }
 	
-	@Autowired UserDao dao;
-	//@Test 
-	@Ignore
-	public void selectAll() {
-		System.out.println(dao.selectAll());
-	};
-	//@Test
-	@Ignore
-	public void insert() {
+	@Ignore/* @Test */  public void insert() { 
 		UserDto dto = new UserDto();
-		dto.setName("fifth"); dto.setAge(55);
-		System.out.println(dao.insert(dto));
+		dto.setName("fifth");   dto.setAge(55);
+		System.out.println(dao.insert(dto)); //1
 	}
-	//@Test
-	@Ignore
-	public void selectOne() {
-		System.out.println(dao.selectOne(1));
-	};
-	//@Test
-	@Ignore
-	public void update() {
+	@Ignore/* @Test */  public void selectOne() {  
+		System.out.println(dao.selectOne(1));  
+	} // UserDto [no=1, name=first, age=11]
+
+	@Ignore/* @Test */  public void update() { 
 		UserDto dto = new UserDto();
-		dto.setName("five"); dto.setAge(5); dto.setNo(5);
-		System.out.println(dao.update(dto));
-		System.out.println(dao.selectOne(5));
+		dto.setName("five");   dto.setAge(5); dto.setNo(5);   //있는번호로 수정한거 확인!
+		System.out.println(dao.update(dto)); //1
+		System.out.println(dao.selectOne(5));// UserDto [no=5, name=five, age=5]  
 	}
-	@Test
-	//@Ignore
-	public void delete() {
-		System.out.println(dao.delete(1));
-	}
+	@Test               public void delete() {  
+		System.out.println(dao.delete(5));  //1
+	}  
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -4,17 +4,19 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Repository;
 import com.company.dto.BoardDto;
 
-public interface BoardDaoImpl extends BoardDao {
-	@Autowired SqlSession sqlSession;
-	private static final String namespace="com.company.dao.BoardDao";
-	
-	@Override public int insert(BoardDto dto); {return sqlSession.insert(namespace + "insert", dto);}
-	@Override public int update(BoardDto dto); {return sqlSession.insert(namespace + "insert", dto);}
-	@Override public int delete(BoardDto dto); {return sqlSession.insert(namespace + "insert", dto);}
-	@Override public int update(int bno); {return sqlSession.insert(namespace + "insert", dto);}
-	@Override public BoardDto select(int bno); {return sqlSession.insert(namespace + "insert", dto);}
-	@Override public List<BoardDto> selectAll(); {return sqlSession.insert(namespace + "insert", dto);}
+@Repository
+public class BoardDaoImpl  implements BoardDao{
+	@Autowired  SqlSession sqlSession;
+	private static final String namespace="com.company.dao.BoardDao"; //##
+
+	@Override public int insert(BoardDto dto) { return sqlSession.insert(namespace + ".insert" , dto); }
+	@Override public int update(BoardDto dto) { return sqlSession.update(namespace + ".update" , dto); }
+	@Override public int delete(BoardDto dto) { return sqlSession.delete(namespace + ".delete" , dto); }
+	@Override public int updateHit(int bno) {   return sqlSession.update(namespace + ".updateHit" , bno); }
+	@Override public BoardDto select(int bno) { return sqlSession.selectOne(namespace + ".select" , bno); }
+	@Override public List<BoardDto> selectAll() { return sqlSession.selectList(namespace + ".selectAll" ); }
+
 }

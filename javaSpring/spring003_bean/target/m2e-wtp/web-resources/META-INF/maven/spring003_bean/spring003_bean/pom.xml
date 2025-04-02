@@ -5,7 +5,14 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
-   	<dependencies>
+	<!-- 수정 -->
+	<!-- 수정 -->
+	<dependencies>
+	<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.3.2</version>
+</dependency>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -27,8 +34,9 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-  
-  
+
+	<!-- 수정 -->
+	<!-- 수정 -->  
   
   <build>
     <plugins>
@@ -36,7 +44,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <release>16</release>
+          <release>11</release>
         </configuration>
       </plugin>
       <plugin>

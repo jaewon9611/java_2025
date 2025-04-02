@@ -32,9 +32,9 @@
 		</dependency>
 	</dependencies>
 
+	<!-- 수정 -->
+	<!-- 수정 -->
 
-	<!-- 수정 -->
-	<!-- 수정 -->
 	<build>
 		<plugins>
 			<plugin>
