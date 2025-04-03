@@ -1,0 +1,10 @@
+package com.company.dao;
+
+public class TestDaoImpl implements TestDao {
+
+
+	@Override public String now() {
+		return sqlSession.selectOne(namespace + ".now");
+	}
+	
+}

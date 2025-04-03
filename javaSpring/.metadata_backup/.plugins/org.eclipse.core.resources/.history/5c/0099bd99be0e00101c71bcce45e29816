@@ -1,0 +1,39 @@
+package com.company.dao;
+
+import java.util.List;
+
+import com.company.dto.UserDto;
+
+public class UserDaoImpl implements UserDao {
+
+	@Override
+	public int insert(UserDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int update(UserDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(int no) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public UserDto selectOne(int no) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserDto> selectAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

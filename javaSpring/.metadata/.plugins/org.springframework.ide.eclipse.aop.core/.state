@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="spring013_ex_board"/>
 <aop-project name="spring006_mybatis3"/>
 <aop-project name="spring003_bean"/>
 <aop-project name="spring007_ex_board"/>
@@ -14,5 +15,6 @@
 <aop-project name="spring008_mybatis3_MapperScannerConfigurer"/>
 <aop-project name="spring002_di_ex"/>
 <aop-project name="spring010_mvc"/>
+<aop-project name="spring012_useful"/>
 <aop-project name="spring010_mvc_ex"/>
 </aop-reference-model>

@@ -1,0 +1,5 @@
+package spring005_mybatis;
+
+public class TestDto {
+
+}
