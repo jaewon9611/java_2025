@@ -1,0 +1,11 @@
+package com.company.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class TestDaoimpl implements TestDao {
+	
+	@Override
+	public String readTime() { return null; }
+
+}

@@ -1,0 +1,11 @@
+package com.company.dao;
+
+public class TestDaoimpl implements TestDao {
+
+	@Override
+	public String readTime() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

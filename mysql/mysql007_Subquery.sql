@@ -19,6 +19,7 @@ insert into sub_userinfo values(5,'fifth' ,55,'f' ,89 ,86 ,99,'B','y');
 insert into sub_userinfo values(6,'sixth' ,66,'m' ,10 ,20 ,44,'C','n');
 select * from sub_userinfo;
 
+select 
 /*
 1. 서브쿼리
 - select 구문안에 select 구문

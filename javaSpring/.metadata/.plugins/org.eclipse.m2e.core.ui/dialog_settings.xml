@@ -1,43 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="wizardPage">
-		<list key="groupId">
-			<item value="spring010_2"/>
-			<item value="spring010_mvc"/>
-			<item value="spring006_mybatis2"/>
-			<item value="spring005_ex_board"/>
-			<item value="spring004_jdbc"/>
-			<item value="spring003_bean"/>
-			<item value="spring002_di_ex"/>
-			<item value="spring001_di"/>
-			<item value="spring000"/>
-		</list>
-		<list key="name">
-		</list>
-		<list key="artifactId">
-			<item value="spring010_2"/>
-			<item value="spring010_mvc"/>
-			<item value="spring006_mybatis2"/>
-			<item value="spring005_ex_board"/>
-			<item value="spring004_jdbc"/>
-			<item value="spring003_bean"/>
-			<item value="spring002_di_ex"/>
-			<item value="spring001_di"/>
-			<item value="spring000"/>
-		</list>
-		<list key="version">
-			<item value="0.0.1-SNAPSHOT"/>
-		</list>
-	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
-		<list key="ciManagementUrl">
-		</list>
-		<list key="ciManagementSystem">
-		</list>
-		<list key="issueManagementSystem">
-		</list>
-		<list key="issueManagementUrl">
-		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
