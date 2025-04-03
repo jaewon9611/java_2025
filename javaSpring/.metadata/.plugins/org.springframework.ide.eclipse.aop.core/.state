@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <aop-reference-model>
 <aop-project name="spring013_ex_board"/>
 <aop-project name="spring006_mybatis3"/>
@@ -18,3 +19,6 @@
 <aop-project name="spring012_useful"/>
 <aop-project name="spring010_mvc_ex"/>
 </aop-reference-model>
+=======
+<aop-reference-model/>
+>>>>>>> c9aad262dbfb7f8a8c3a7047c00485c8197a36ab
