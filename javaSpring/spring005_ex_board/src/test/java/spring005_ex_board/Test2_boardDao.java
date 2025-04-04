@@ -35,11 +35,11 @@ public class Test2_boardDao {
 //		System.out.println(dao.updateHit(1));
 //		System.out.println(dao.select(1));
 //		//2. insert
-		BoardDto dto = new BoardDto();
-		dto.setBname("first");   dto.setBtitle("title");  dto.setBpass("1111");
-		dto.setBcontent("content");  
-		dto.setBip(InetAddress.getLocalHost().getHostAddress());  
-		System.out.println(dao.insert(dto));
+		//BoardDto dto = new BoardDto();
+		//dto.setBname("first");   dto.setBtitle("title");  dto.setBpass("1111");
+		//dto.setBcontent("content");  
+		//dto.setBip(InetAddress.getLocalHost().getHostAddress());  
+		//System.out.println(dao.insert(dto));
 //		//1. selectAll
 		System.out.println(dao.selectAll());
 	}
