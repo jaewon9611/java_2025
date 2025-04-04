@@ -10,6 +10,7 @@ bdate timestamp not null default current_timestamp,
 bip varchar(100) not null
 );
 select * from board;
+
 desc board;
 insert into board (btitle,bcontent,bname, bip) values(?,?,?,?);     #글쓰기
 select * from board order by bno desc;                              #최신글읽기
