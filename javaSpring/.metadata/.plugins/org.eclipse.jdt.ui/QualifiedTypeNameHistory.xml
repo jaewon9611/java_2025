@@ -5,4 +5,8 @@
     <fullyQualifiedTypeName name="java.rmi.UnknownHostException"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.net.InetAddress"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.interceptor.TransactionAspectSupport"/>
+    <fullyQualifiedTypeName name="com.company.service.BoardService"/>
 </qualifiedTypeNameHistroy>
