@@ -54,3 +54,5 @@
 2025-04-02 Spring MapperScannerConfigurer Mvc
 ####
 2025-04-03 Spring jstl
+####
+2025-04-04 Spring HikariCP Tx
