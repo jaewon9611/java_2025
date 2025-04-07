@@ -172,6 +172,7 @@ create table member(
     name varchar(100) not null,
     pass varchar(50) not null
 );
+drop table member;
 desc member;
 insert into member values(1, 'first' , 11);
 insert into member values(2, 'second' , 22);
