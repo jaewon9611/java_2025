@@ -4,6 +4,7 @@ create database test;   -- 만드세요 데이터베이스 데이터베이스명
 show databases;        -- 데이터베이스 목록들확인
 drop database test;    -- 데이터베이스 삭제
 show databases;        -- 데이터베이스 목록들확인
+create database myboot;
 
 ## database  mbasic , test 만들기
 create database mbasic;
