@@ -2,7 +2,7 @@ package com.thejoa.boot001.myjpa;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface TeamRespository extends JpaRepository<Team , Long>{
+public interface TeamRepository extends JpaRepository<Team , Long>{
 } //JpaRepository<Team , Long> 테이블 , 기본값자료형
 /*
 mysql> desc team;

@@ -9,12 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.thejoa.boot001.myjpa.Member;
-import com.thejoa.boot001.myjpa.MemberRespository;
+import com.thejoa.boot001.myjpa.MemberRepository;
 import com.thejoa.boot001.myjpa.Team;
 
 @SpringBootTest
 class Test002_Member {
-	@Autowired MemberRespository memberRespository;
+	@Autowired MemberRepository memberRepository;
 	
 	@Disabled //@Test
 	public void insert() {
@@ -26,12 +26,12 @@ class Test002_Member {
 		member.setName("first");
 		member.setAge(11);
 		member.setTeam(team); //##2
-		memberRespository.save(member);  //## insert, update - save
+		memberRepository.save(member);  //## insert, update - save
 	}
 	//Q2. findAll 유저들 출력
 	@Disabled //@Test
 	public void selectAll() {
-		List<Member> list = memberRespository.findAll();
+		List<Member> list = memberRepository.findAll();
 		for(Member m: list) {System.out.println(m);}
 		System.out.println(list.get(0).getName());
 		
@@ -39,23 +39,23 @@ class Test002_Member {
 	//Q3. update 이용해서 유저번호가 1L인 데이터값 수정
 	@Disabled //@Test
 	public void update() {
-		Optional<Member>member_find = memberRespository.findById(1L);
+		Optional<Member>member_find = memberRepository.findById(1L);
 		
 		if(member_find.isPresent()); {
 		
 		Member member = member_find.get();
 		member.setName("iron");
 		member.setAge(1);
-		memberRespository.save(member);
+		memberRepository.save(member);
 		}
 	}
 	//Q4. delete 이용해서 1L 유저 삭제
 	@Test  
 	public void delete() { 
-		Optional<Member> member_find = memberRespository.findById(1L);
+		Optional<Member> member_find = memberRepository.findById(1L);
 		if(member_find.isPresent()) {
 			Member member=member_find.get();
-			memberRespository.delete(member);
+			memberRepository.delete(member);
 			
 		}
 	}
