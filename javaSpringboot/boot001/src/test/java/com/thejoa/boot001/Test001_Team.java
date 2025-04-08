@@ -9,11 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.thejoa.boot001.myjpa.Team;
-import com.thejoa.boot001.myjpa.TeamRespository;
+import com.thejoa.boot001.myjpa.TeamRepository;
 
 @SpringBootTest
 class Test001_Team {
-	@Autowired TeamRespository teamRespository;
+	@Autowired TeamRepository teamRepository;
 	
 	// teamRespository- save (insert , update) / teamRespository.delete - (delete)
 	// teamRespository.findAll (select)        / teamRespository.findById select
@@ -22,12 +22,12 @@ class Test001_Team {
 		public void insert() { 
 		Team team = new Team();
 		team.setName("avengers");  // fruit , animal
-		teamRespository.save(team);
+		teamRepository.save(team);
 	}
 	
 		@Disabled //@Test 
 		public void selectAll() { 
-			List<Team> list = teamRespository.findAll();
+			List<Team> list = teamRepository.findAll();
 		System.out.println(list.size());
 		System.out.println(list.get(0).getName());
 	}
@@ -35,21 +35,21 @@ class Test001_Team {
 		public void update() { 
 			//1. 수정할 팀찾기
 			// Optional<Team> - null 값 안전보장
-			Optional<Team>findTeam = teamRespository.findById(1L);
+			Optional<Team>findTeam = teamRepository.findById(1L);
 			System.out.println(findTeam.isPresent()); // true
 			
 			//2. 이름변경해서 수정
 			Team team = findTeam.get();
 			team.setName("avenger");
-			teamRespository.save(team); // save : insert,update
+			teamRepository.save(team); // save : insert,update
 	}
 		@Disabled //@Test   
 		public void delete() { 
-			Optional<Team> findTeam = teamRespository.findById(3L);
+			Optional<Team> findTeam = teamRepository.findById(3L);
 			System.out.println( findTeam.isPresent()); //true
 			
 			Team team = findTeam.get();
-			teamRespository.delete(team);
+			teamRepository.delete(team);
 	}
 		
 		
