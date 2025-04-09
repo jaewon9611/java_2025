@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<!-- CTRL + SHIFT + F -->
 	<div layout:fragment="content">
 		<div class="container   my-5">
 			<h3>MULTIBOARD</h3>
@@ -28,10 +27,10 @@
 					<!-- 2. th:text="동적으로꺼내온데이터"             -->
 					<!-- 3. th:href="@{/board/insert}"            -->
 					<tr  th:each=" dto , state   : ${list}" >
-						<td th:text="${state.index}"></td>
-						<td><a th:href="@{|/board/deail/${dto.id}|}"    th:text="${dto.btitle}"></a></td>
+						<td th:text="${list.size() - state.index}"></td>
+						<td><a th:href="@{|/board/detail/${dto.id}|}"    th:text="${dto.btitle}"></a></td>
 						<td th:text="${dto.member.name}"></td>
-						<td th:text="${dto.createDate}"></td>
+						<td th:text="${ #temporals.format(dto.createDate , 'yyyy년-MM월-dd일 HH:mm')  }"></td>
 						<td th:text="${dto.bhit}"></td>
 					</tr>
 				</tbody>
