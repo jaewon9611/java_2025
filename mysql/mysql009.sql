@@ -5,7 +5,6 @@ desc team;
 drop database myboot;
 
 use member;
-show tables;
 desc member;
 
 desc team_member;
