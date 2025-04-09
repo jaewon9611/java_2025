@@ -58,3 +58,5 @@
 2025-04-04 Spring HikariCP Tx
 ####
 2025-04-07 Springboot 설정 및 project
+####
+04-08 Springboot board만들기
