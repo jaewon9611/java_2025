@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.thejoa</groupId>
-	<artifactId>boot004_security</artifactId>
+	<artifactId>boot005</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>boot004_security</name>
+	<name>boot005</name>
 	<description>Demo project for Spring Boot</description>
 	<url />
 	<licenses>

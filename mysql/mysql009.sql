@@ -10,6 +10,7 @@ desc member;
 desc team_member;
 
 select * from member;
+
 select * from team;
 
 select * from board;

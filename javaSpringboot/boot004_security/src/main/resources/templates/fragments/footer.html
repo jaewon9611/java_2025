@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- layout.html 	
+		<th:block   th:replace="fragments/footer::footer"    /> 
+	-->
+	<th:block th:fragment="footer">
+		<footer class="bg-dark text-white py-3 mt-5">
+			<div class="container text-center">
+				<p class="mb-0">© TEST.</p>
+			</div>
+		</footer>
+	</th:block>
+
+</body>
+</html>
