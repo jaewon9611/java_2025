@@ -3,7 +3,7 @@ package com.thejoa.boot001.myjpa;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TeamRepository extends JpaRepository<Team , Long>{
-} //JpaRepository<Team , Long> 테이블 , 기본값자료형
+} // JpaRepository<Team , Long>   테이블 , 기본값자료형
 /*
 mysql> desc team;
 +-------------+--------------+------+-----+---------+----------------+
@@ -16,10 +16,8 @@ mysql> desc team;
 3 rows in set (0.00 sec)
 mysql>
 
-crud1. insert into team (name) values('milk')
-crud2. select * from team / select * from team where id=? 
-crud3. update team      set name=?    where id=?
-crud4. delete from      team where id=?
-
-
+crud1. insert  into team (name) values (?)
+crud2. select * from team  / select * from team where  id=? 
+crud3. update team     set  name=?    where  id=? 
+crud4. delete from     team   where  id=? 
 */

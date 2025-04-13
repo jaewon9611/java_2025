@@ -6,8 +6,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 //@Data
-@Getter
-@Setter
+@Getter 
+@Setter 
 @NoArgsConstructor
 @ToString
 public class UserDto {
@@ -16,4 +16,4 @@ public class UserDto {
 }
 
 
-// com.회사명.프로젝트.개발단위 - @Controller / @Servlet /@Db관련
+// com.회사명.프로젝트.개발단위 - @Controller / @Servlet/@Db관련
