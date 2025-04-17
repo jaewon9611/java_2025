@@ -1,6 +1,9 @@
+create database ssgfc;
+
 use myboot;
 show tables;
 desc team;
+
 
 drop database myboot;
 
@@ -22,6 +25,7 @@ select * from board;
 show tables;
 desc team;
 desc member;
+select * from member;
 
 
 desc board;
