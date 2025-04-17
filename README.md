@@ -70,3 +70,5 @@
 04-15 SpringBoot , figma , paging
 ####
 04-16 springBoot , figma , image
+####
+04-17 springBoot , game 크롤링 성공
